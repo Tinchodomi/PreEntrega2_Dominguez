@@ -1,0 +1,45 @@
+header{
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 20px;
+    background-color: rgba(220, 220, 220, 0.361);
+
+}
+
+
+
+.logo{
+
+    width: 7%;
+    height: 7%;
+  
+    
+}
+
+
+.ul{
+
+    list-style: none;
+    padding-right: 75px;
+}
+
+.li{
+
+    display: inline;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.li:hover{
+
+   
+    text-decoration: underline;
+    font-size: 17px;
+
+}

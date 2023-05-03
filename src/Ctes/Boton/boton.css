@@ -1,0 +1,21 @@
+.boton{
+
+    border-radius: 10px;
+    font-size: 0.60rem;
+    padding: 0.8rem;
+    margin: 1rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.75s;
+
+}
+
+.boton:hover {
+
+    font-size: 15px;
+
+
+}
+
+
