@@ -1,21 +1,19 @@
 .boton{
 
     border-radius: 10px;
-    font-size: 0.60rem;
-    padding: 0.8rem;
-    margin: 1rem;
+    font-size: 18px;
+    padding: 15px;
+    margin: 10px;
     background-color: black;
     color: white;
     cursor: pointer;
-    transition: all 0.75s;
+    transition: all 0.5s;
 
 }
 
 .boton:hover {
 
-    font-size: 15px;
-
+   background-color: white;
+   color: black;
 
 }
-
-

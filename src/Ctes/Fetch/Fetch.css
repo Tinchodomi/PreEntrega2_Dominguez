@@ -1,0 +1,10 @@
+.fetch_container{
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    margin-top: 50px;
+    
+    
+}
+

@@ -1,0 +1,22 @@
+.contador{
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    justify-content: center;
+   
+}
+
+.btn{
+
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+
+
+p{
+
+    font-size: 12px;  
+}
+

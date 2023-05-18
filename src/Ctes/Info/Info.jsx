@@ -1,15 +1,11 @@
 
 import './info.css'
 
-const Info = () => {
+const Info = ({nombre,precio}) => {
   return (
     <div className="info">
-       <h4>
-        Nike Crater Impact
-       </h4>
-        <p>Running</p>
-        <p>$48450</p>
-        <p className='interes'>3 cuotas de ${48450/3} sin interes</p>
+        <h5>{nombre}</h5>
+        <h6>${precio}</h6> 
     </div>
   )
 }
