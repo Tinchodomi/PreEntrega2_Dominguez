@@ -1,24 +1,24 @@
 const productos = [
   {
-    nombre: "Nike crater impact",
-    id: 1,
-    precio: 48500,
-    img: "https://woker.vtexassets.com/arquivos/ids/232469-1200-1200?v=637678296098800000&width=1200&height=1200&aspect=true",
+    nombre: "Nike Crater Impact",
+    id: '1',
+    precio: `$${48500}`,
+    img: "https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw0a870367/products/NI_CW2386-001/NI_CW2386-001-1.JPG",
+    idCat: "1",
+  },
+  {
+    nombre: "Nike Air Vapormax",
+    id: '2',
+    precio: `$${63200}`,
+    img: "https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwd8f07c01/products/NI_CK2612-500/NI_CK2612-500-1.JPG",
     idCat: "2",
   },
   {
-    nombre: "Nike crater impact",
-    id: 1,
-    precio: 48500,
-    img: "https://woker.vtexassets.com/arquivos/ids/232469-1200-1200?v=637678296098800000&width=1200&height=1200&aspect=true",
-    idCat: "2",
-  },
-  {
-    nombre: "Nike crater impact",
-    id: 1,
-    precio: 48500,
-    img: "https://woker.vtexassets.com/arquivos/ids/232469-1200-1200?v=637678296098800000&width=1200&height=1200&aspect=true",
-    idCat: "2",
+    nombre: "Nike Jordan Delta",
+    id: '3',
+    precio: `$${39590}`,
+    img: "https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw227ed372/products/NIDN2647-060/NIDN2647-060-1.JPG",
+    idCat: "3",
   },
 ];
 
@@ -26,9 +26,25 @@ export const getProductos = () => {
   return new Promise((res) => {
     setTimeout(() => {
       res(productos);
-    }, 2000);
+    }, 0);
   });
 };
+
+
+export const getUnProducto = (id) => {
+
+  return new Promise( resolve =>{
+
+    setTimeout(() => {
+      
+      const producto = productos.find(prod => prod.id === id)
+      resolve(producto)
+    
+    }, 0);
+  }) 
+
+}
+
 
 export const getProductosPorCategoria = (idCategoria) => {
   return new Promise((resolve) => {
@@ -37,6 +53,6 @@ export const getProductosPorCategoria = (idCategoria) => {
         (prod) => prod.idCat === idCategoria
       );
       resolve(productosCategoria);
-    }, 200);
+    }, 0);
   });
 };

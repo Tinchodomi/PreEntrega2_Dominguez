@@ -1,31 +1,31 @@
-
-import './App.css';
-import Cards from './Ctes/Card/Cards';
-import ItemListContainer from './Ctes/ItemListContainer/ItemListContainer';
-import ModoOscuro from './Ctes/ModoOscuro/ModoOscuro';
-import Navbar from './Ctes/Navbar/Navbar';
-import Promesas from './Ctes/Promesas/Promesas';
-import Fetch from './Ctes/Fetch/Fetch';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Navbar from "./TiendaNike/Navbar/Navbar";
+import ItemListContainer from "./TiendaNike/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./TiendaNike/ItemDetailContainer/ItemDetailContainer";
+import ModoOscuro from "./TiendaNike/ModoOscuro/ModoOscuro";
 
 function App() {
   
-  return (
-    
-    <div>
-        <p className='p'>3 cuotas sin interes en todo el sitio</p>
-        <Navbar/>
-        <ItemListContainer running={'Running'}/>
-        <div className='style'>
-          <Cards/> 
-          <Cards/> 
-          <Cards/>
-        </div>
-        <ModoOscuro/>
-        <Promesas/>
-        <Fetch/>
   
-    </div>
+  
+  
+  
+  
+  
+  return (
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer/>} />
+          <Route path="/categoria/:idCategoria" element={<ItemListContainer/>}/>
+          <Route path="/item/:idItem" element={<ItemDetailContainer />} />
+          <Route path="/" element={<ItemListContainer />} />
+        </Routes>
+        <ModoOscuro/>
+      </BrowserRouter>
+    </>
   );
 }
 

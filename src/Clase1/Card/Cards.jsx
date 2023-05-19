@@ -1,9 +1,9 @@
 import Imagen from "../Imagen/Imagen"
 import Info from "../Info/Info"
-import Boton from "../Boton/Boton"
+import Boton from "../Clase1/Boton/Boton"
 import './cards.css'
 import'./cards.css'
-import Contador from "../Contador/Contador"
+import Contador from "../../TiendaNike/Contador/Contador"
 
 const Cards = () => {
   return (
@@ -13,7 +13,6 @@ const Cards = () => {
         <Info nombre="Nike crater impact" precio={48500.00}/> 
         <Contador inicial={1} stock={5}/>
         <Boton/>
-        
     </div>
   )
 }

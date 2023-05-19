@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./Contador.css";
 
 
-const Contador = ({ stock, inicial }) => {
+ const Contador = ({ stock, inicial }) => {
   
   const [contador, setContador] = useState(inicial);
   const [color, setColor] = useState('black')

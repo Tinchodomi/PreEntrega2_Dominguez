@@ -1,0 +1,29 @@
+.item{
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item__imagen{
+
+    width: 70%;
+    height: 70%;
+}
+
+.detalles{
+
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 15px;
+    padding-top: 10px;
+
+}
+
+.id{
+
+    font-size: 12px;
+}

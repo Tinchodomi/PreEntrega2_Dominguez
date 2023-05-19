@@ -22,3 +22,9 @@ body .oscuro{
   background-color: black;
 
 }
+
+.ItemDetailContainer{
+
+  display: flex;
+
+}

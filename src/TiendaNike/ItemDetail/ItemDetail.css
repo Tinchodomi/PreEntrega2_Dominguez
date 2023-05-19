@@ -1,0 +1,16 @@
+.ItemDetail_imagen{
+
+
+    width: 35%;
+    height: 35%;
+}
+
+.ItemDetail{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
