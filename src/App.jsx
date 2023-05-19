@@ -6,24 +6,20 @@ import ItemDetailContainer from "./TiendaNike/ItemDetailContainer/ItemDetailCont
 import ModoOscuro from "./TiendaNike/ModoOscuro/ModoOscuro";
 
 function App() {
-  
-  
-  
-  
-  
-  
-  
   return (
     <>
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<ItemListContainer/>} />
-          <Route path="/categoria/:idCategoria" element={<ItemListContainer/>}/>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route
+            path="/categoria/:idCategoria"
+            element={<ItemListContainer />}
+          />
           <Route path="/item/:idItem" element={<ItemDetailContainer />} />
           <Route path="/" element={<ItemListContainer />} />
         </Routes>
-        <ModoOscuro/>
+        <ModoOscuro />
       </BrowserRouter>
     </>
   );
