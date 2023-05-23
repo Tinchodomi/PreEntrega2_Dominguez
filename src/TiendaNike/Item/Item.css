@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .item__imagen{
@@ -18,12 +19,14 @@
     text-decoration: none;
     list-style: none;
     color: black;
-    font-size: 15px;
-    padding-top: 10px;
-
 }
 
 .id{
 
     font-size: 12px;
+}
+
+.detalles:hover{
+    color: black;
+    
 }
