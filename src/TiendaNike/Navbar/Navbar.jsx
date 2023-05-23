@@ -1,4 +1,5 @@
 import Car from "../CartWidget/Car";
+import Logo from "../Logo/Logo";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
@@ -6,9 +7,8 @@ const Navbar = () => {
   return (
     <header className="header">
       <Link to={"/"} className="link_logo">
-        <h1 className="h1_logo">Nike</h1>
+        <Logo/>
       </Link>
-
       <nav>
         <ul className="ul">
           <li className="li">
@@ -23,7 +23,12 @@ const Navbar = () => {
           </li>
           <li className="li">
             <Link className="link" to={"/item/3"}>
-              Sale
+              Niño/a
+            </Link>
+          </li>
+          <li className="li">
+            <Link className="link">
+             Destacados
             </Link>
           </li>
         </ul>

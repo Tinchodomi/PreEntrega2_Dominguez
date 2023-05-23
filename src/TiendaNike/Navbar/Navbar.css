@@ -35,6 +35,7 @@ header{
 
     list-style: none;
     padding-right: 75px;
+    color: black;
 }
 
 .li{
@@ -50,11 +51,17 @@ header{
 .li:hover{
 
     font-size: 17px;
-
+    
+    
 }
 
 .link{
 
     text-decoration: none;
+    color: black;
+}
+
+.link:hover{
+
     color: black;
 }

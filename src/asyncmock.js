@@ -8,7 +8,7 @@ const productos = [
     idCat: "1",
   },
   {
-    nombre: "Nike Air Vapormax",
+    nombre: "Nike Air Vapor Wm",
     id: '2',
     precio: `$${63200}`,
     img: "https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwd8f07c01/products/NI_CK2612-500/NI_CK2612-500-1.JPG",
@@ -16,7 +16,7 @@ const productos = [
     idCat: "2",
   },
   {
-    nombre: "Nike Jordan Delta",
+    nombre: "Nike Jordan Kids",
     id: '3',
     precio: `$${39590}`,
     img: "https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw227ed372/products/NIDN2647-060/NIDN2647-060-1.JPG",
