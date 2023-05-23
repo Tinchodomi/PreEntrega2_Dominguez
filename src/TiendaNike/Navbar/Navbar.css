@@ -1,13 +1,15 @@
 header{
 
     display: flex;
+    position: fixed;
     flex-flow: row;
     justify-content: space-around;
     align-items: center;
     margin: 0px;
-    padding: 20px;
+    padding: 0px;
     text-decoration: none;
-   
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.255);
 
 }
 
