@@ -3,14 +3,12 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-
-
   return (
     <header className="header">
-        <Link to={'/'} className="link_logo">
-            <h1  className="h1_logo">Nike</h1>
-         </Link>
-     
+      <Link to={"/"} className="link_logo">
+        <h1 className="h1_logo">Nike</h1>
+      </Link>
+
       <nav>
         <ul className="ul">
           <li className="li">

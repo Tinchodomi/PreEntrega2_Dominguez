@@ -12,19 +12,4 @@ code {
     monospace;
 }
 
-body .claro{
 
-  background-color: white;
-}
-
-body .oscuro{
-
-  background-color: black;
-
-}
-
-.ItemDetailContainer{
-
-  display: flex;
-
-}

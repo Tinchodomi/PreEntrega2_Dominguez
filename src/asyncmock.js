@@ -4,6 +4,7 @@ const productos = [
     id: '1',
     precio: `$${48500}`,
     img: "https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw0a870367/products/NI_CW2386-001/NI_CW2386-001-1.JPG",
+    stock:10,
     idCat: "1",
   },
   {
@@ -11,6 +12,7 @@ const productos = [
     id: '2',
     precio: `$${63200}`,
     img: "https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwd8f07c01/products/NI_CK2612-500/NI_CK2612-500-1.JPG",
+    stock:5,
     idCat: "2",
   },
   {
@@ -18,6 +20,7 @@ const productos = [
     id: '3',
     precio: `$${39590}`,
     img: "https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw227ed372/products/NIDN2647-060/NIDN2647-060-1.JPG",
+    stock:10,
     idCat: "3",
   },
 ];

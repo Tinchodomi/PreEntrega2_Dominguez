@@ -6,7 +6,6 @@ header{
     align-items: center;
     margin: 0px;
     padding: 20px;
-    background-color: rgba(220, 220, 220, 0.361);
     text-decoration: none;
    
 
@@ -17,6 +16,7 @@ header{
     text-decoration: none;
     list-style: none;
     color: black;
+    
 
 
 }
@@ -26,6 +26,7 @@ header{
     text-decoration: none;
     list-style: none;
     color: black;
+    font-size: 30px;
 
 }
 
