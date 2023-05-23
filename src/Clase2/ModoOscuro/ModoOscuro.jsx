@@ -8,13 +8,13 @@ const ModoOscuro = () => {
     setModoOscuro(!modoOscuro);
   };
 
-  const invertido = modoOscuro ? "claro" : "oscuro";
+  const oscuro = modoOscuro ? "claro" : "oscuro";
 
-  const estilo = modoOscuro ? "oscuro" : "claro";
+  const claro = modoOscuro ? "oscuro" : "claro";
 
   return (
-    <div id="container" className={estilo}>
-      <button id="Bmodo" className={invertido} onClick={cambiarModo}>
+    <div id="container" className={claro}>
+      <button id="Bmodo" className={oscuro} onClick={cambiarModo}>
         {" "}
         {modoOscuro ? "Withe mode" : "Black mode"}
       </button>
