@@ -1,7 +1,8 @@
-import { useState } from "react";
+import {  useState } from "react";
 import "./ItemDetail.css";
 import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
+//import { carritoContext } from "../Context/ContextCarrito";
 
 const ItemDetail = ({ id, nombre, precio, img, stock }) => {
   const [agregar, Set_agregar] = useState(0);
@@ -15,6 +16,15 @@ const ItemDetail = ({ id, nombre, precio, img, stock }) => {
   const menj = () => {
     Swal.fire("Sitio en Construccion");
   };
+
+/*   const {agregarProducto} = useContext(carritoContext)
+
+  const manejarCantidad = (cantidad) =>{
+
+    Set_agregar(cantidad)
+  }
+  */
+
 
   return (
     <div className="ItemDetail">
