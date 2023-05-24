@@ -4,12 +4,10 @@ header{
     position: fixed;
     flex-flow: row;
     justify-content: space-around;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
+    align-items: center;  
     text-decoration: none;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.255);
+    background-color: rgba(0, 0, 0, 0.145);
 
 }
 
@@ -23,14 +21,6 @@ header{
 
 }
 
-
-.h1_logo{
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    font-size: 30px;
-
-}
 
 
 .ul{

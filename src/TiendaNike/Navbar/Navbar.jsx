@@ -34,6 +34,7 @@ const Navbar = () => {
         </ul>
       </nav>
       <Car />
+      
     </header>
   );
 };
