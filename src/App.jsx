@@ -1,27 +1,25 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Navbar from "./TiendaNike/Navbar/Navbar";
-import ItemListContainer from "./TiendaNike/ItemListContainer/ItemListContainer";
-import ItemDetailContainer from "./TiendaNike/ItemDetailContainer/ItemDetailContainer";
-import ModoOscuro from "./Clase2/ModoOscuro/ModoOscuro";
-//import { CarritoProvider } from "./TiendaNike/Context/ContextCarrito";
+import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import Cart from "./components/Cart/Cart";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { CarritoProvider } from "./context/CarritoContext";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar/>
-        <Routes>
-          <Route path="/" element={<ItemListContainer />} />
-          <Route
-            path="/categoria/:idCategoria"
-            element={<ItemListContainer />}
-          />
-          <Route path="/item/:idItem" element={<ItemDetailContainer />} />
-          <Route path="/" element={<ItemListContainer />} />
-          <Route path="*" />
-        </Routes>
-        <ModoOscuro/>
+        <CarritoProvider>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<ItemListContainer />} />
+            <Route path="/categoria/:idCategoria" element={<ItemListContainer />}/>
+            <Route path="/item/:idItem" element={<ItemDetailContainer />} />
+            <Route path="*" element={<h2> Sitio en Construcción </h2>} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </CarritoProvider>
       </BrowserRouter>
     </>
   );
