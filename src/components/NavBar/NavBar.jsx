@@ -9,22 +9,24 @@ const NavBar = () => {
       <Link to={"/"}>
           <Logo/>
       </Link>
-
-      <nav>
+      <nav className="nav">
         <ul>
+        <li>
+            <NavLink className='navlink' to={`/categoria/1`}> Hombre </NavLink>
+          </li>
           <li>
-            <NavLink className='navlink' to={`/categoria/2`}> Hombre </NavLink>
+            <NavLink className='navlink' to={`/categoria/2`}> Mujer </NavLink>
           </li>
 
           <li>
-            <NavLink className='navlink' to={`/categoria/3`}> Mujer </NavLink>
+            <NavLink className='navlink' to={`/categoria/3`}> Niños </NavLink>
           </li>
-
+          <li>
+            <NavLink className='navlink' to={`/categoria/4`}> Destacados </NavLink>
+          </li>
         </ul>
       </nav>
-
       <CartWidget />
-
     </header>
   )
 }

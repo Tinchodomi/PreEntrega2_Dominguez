@@ -1,9 +1,39 @@
 .contenedorItem {
     text-align: center;
-    border: 1px solid #e3e1e1;
-    margin: 3rem;
+    margin: 2rem;
+    display: flex;
+    width: 100%;
+
+}
+
+.contenedorItem1 {
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  margin: 1rem;
+
+
+}
+
+
+
+
+.contenedorItem2 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 1rem;
+  
 }
 
 img {
-    width: 50vw;
+   width: 50%;
 }
