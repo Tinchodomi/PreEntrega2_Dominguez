@@ -1,39 +1,37 @@
 .contenedorItem {
-    text-align: center;
-    margin: 2rem;
-    display: flex;
-    width: 100%;
-
+  text-align: center;
+  display: flex;
+  width: 100%;
 }
 
 .contenedorItem1 {
-    
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 50%;
-  margin: 1rem;
-
-
+  width: 60%;
+  margin: 2rem;
 }
 
-
-
-
 .contenedorItem2 {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 50%;
-    margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+  margin: 6rem;
   
 }
 
-img {
-   width: 50%;
+.imgItem {
+  width: 80%;
+}
+
+.divisorItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
 }
