@@ -34,9 +34,9 @@ const ItemDetail = ({ id, nombre, precio, img, stock }) => {
         </div>
         <div className='contenedorItem2'>
           <h2> {nombre} </h2>
-          <h3> ${precio} </h3>
+          <p> ${precio} </p>
           {
-        agregarCantidad > 0 ? (<Link className='btnProducto' to="/cart"> Ir al carrito </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
+        agregarCantidad > 0 ? (<Link className='btnDetail' to="/cart"> Ir al carrito </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
         }
         </div>
     </div>

@@ -1,12 +1,8 @@
-.imgCarrito {
-    width: 4rem;
-    position: fixed;
-}
 
 .cartwid{
 
     color: black;
     list-style: none;
     text-decoration: none;
-    font-size: 12.5px;
+   
 }

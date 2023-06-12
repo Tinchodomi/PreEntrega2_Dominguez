@@ -1,4 +1,5 @@
 import React from 'react'
+import './CartLogo.css'
 
 const CartLogo = () => {
   return (

@@ -1,14 +1,36 @@
-.divCart{
+
+.contenedorItemcart{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid black;
+}
+
+.contenedorImg{
+ width: 20%;
+   
+}
+
+.contenedorCart1{
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    
-   
-
+    justify-content: center;
+    align-items: space-between;
+    text-align: center;
+  
 }
-.imgCart{
 
-    width: 20%;
+.contenedorCart2{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  
+  
 }

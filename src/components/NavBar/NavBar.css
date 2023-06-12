@@ -11,22 +11,33 @@ ul{
 
     margin: 0px;
     padding: 0px;
+    color: black;
 
 }
 li {
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer; 
+    color: black;
+    font-weight: bold;
+    
 }
 
 .navlink{
     text-decoration: none;
     color: black;
     transition: all 0.5s;
+    font-size: 15px;
+    list-style: none;
+
+    
+    
 }
 
 .navlink:hover{
 
-    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
 }
 
