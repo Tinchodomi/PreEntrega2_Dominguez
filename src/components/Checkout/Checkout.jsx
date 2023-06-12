@@ -1,13 +1,12 @@
-import React, { useContext } from "react";
+import  { useContext,useState } from "react";
 import "./Checkout.css";
 import { db } from "../../services/config";
-import { collection, addDoc, updateDoc } from "firebase/firestore";
-import { useState } from "react";
+import { collection, addDoc, updateDoc,doc, getDoc } from "firebase/firestore";
 import { CarritoContext } from "../../context/CarritoContext";
-import { getDoc, doc } from "firebase/firestore";
+
 
 const Checkout = () => {
-  const { carrito, vaciarCarrito } = useContext(CarritoContext);
+  const { carrito, vaciarCarrito, total } = useContext(CarritoContext);
   const [nombre, setNombre] = useState("");
   const [apellido, setApellido] = useState("");
   const [telefono, setTelefono] = useState("");
@@ -16,24 +15,18 @@ const Checkout = () => {
   const [error, setError] = useState("");
   const [ordenId, setOrdenId] = useState("");
 
-  //Validacion de datos
-
   const manejadorFormulario = (event) => {
     event.preventDefault();
-    //Verificamos que los campos esten completos
+
     if (!nombre || !apellido || !telefono || !email || !emailConfirm) {
       setError("Por favor complete todos los campos");
       return;
     }
 
-    //Validamos que los campos de email coincidan
-
     if (email !== emailConfirm) {
       setError("Los campos del email no coinciden");
       return;
     }
-
-    //1. creamos el objeto de la orden
 
     const orden = {
       items: carrito.map((producto) => ({
@@ -49,11 +42,11 @@ const Checkout = () => {
       apellido,
       telefono,
       email,
+      fecha: new Date(),
     };
 
     Promise.all(
       orden.items.map(async (productoOrden) => {
-        //por cad producto del inventario obtengo una ref y a partir de la ref obtengo el doc
         const productoRef = doc(db, "inventario", productoOrden.id);
         const productoDoc = await getDoc(productoRef);
         const stockActual = productoDoc.data().stock;
@@ -61,7 +54,6 @@ const Checkout = () => {
         await updateDoc(productoRef, {
           stock: stockActual - productoOrden.cantidad,
         });
-        //modifico el stock y subo la informacion actualizada
       })
     )
       .then(() => {
@@ -94,6 +86,8 @@ const Checkout = () => {
             </p>
           </div>
         ))}
+
+        <p>Total Compra: ${total}</p>
 
         <hr />
 

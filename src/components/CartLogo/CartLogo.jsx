@@ -1,10 +1,10 @@
-import React from 'react'
-import './CartLogo.css'
+import React from "react";
+import "./CartLogo.css";
 
 const CartLogo = () => {
   return (
     <>
-    <svg
+      <svg
         className="carrito"
         width="30px"
         height="30px"
@@ -28,9 +28,8 @@ const CartLogo = () => {
           />{" "}
         </g>
       </svg>
-
     </>
-  )
-}
+  );
+};
 
-export default CartLogo
+export default CartLogo;

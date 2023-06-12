@@ -1,18 +1,14 @@
-.checkoutDiv{
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
+.checkoutDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.formDiv{
-
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+.formDiv {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
