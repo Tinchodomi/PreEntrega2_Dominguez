@@ -1,18 +1,20 @@
 import "./App.css";
-import NavBar from "./components/NavBar/NavBar";
+//import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import Cart from "./components/Cart/Cart";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CarritoProvider } from "./context/CarritoContext";
 import Checkout from "./components/Checkout/Checkout";
+import NavBar2 from "./components/NavBar/NavBar2";
+
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <CarritoProvider>
-          <NavBar />
+          <NavBar2/>
           <Routes>
             <Route path="/" element={<ItemListContainer />} />
             <Route
