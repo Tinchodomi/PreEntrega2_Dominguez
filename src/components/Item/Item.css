@@ -31,7 +31,7 @@
 .btnProducto{
 
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 15px;
     margin: 10px;
     background-color: black;
@@ -39,6 +39,7 @@
     cursor: pointer;
     transition: all 0.5s;
     text-decoration: none;
+    text-align: center;
 }
 
 .btnProducto:hover{

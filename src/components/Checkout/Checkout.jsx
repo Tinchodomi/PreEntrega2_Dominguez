@@ -136,12 +136,15 @@ const Checkout = () => {
         
           Finalizar Compra
         </button>
+       
         {ordenId && (
         <strong className="">
           Gracias por tu compra! tu numero de Orden es: {ordenId}
         </strong>
       )}
       </form>
+     
+
 
      
     </div>

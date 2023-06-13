@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CarritoProvider } from "./context/CarritoContext";
 import Checkout from "./components/Checkout/Checkout";
 import NavBar2 from "./components/NavBar/NavBar2";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </CarritoProvider>
+        <Footer/>
       </BrowserRouter>
     </>
   );
