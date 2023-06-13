@@ -1,4 +1,4 @@
-import Container from "react-bootstrap/Container";
+
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink, Link } from "react-router-dom";
@@ -17,7 +17,7 @@ function BasicExample() {
         <Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse  id="basic-navbar-nav">
-            <Nav>
+            <Nav className="miNav">
               <NavLink className="navlink" to={`/categoria/1`}>
                 Hombre
               </NavLink>
