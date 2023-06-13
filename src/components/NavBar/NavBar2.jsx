@@ -8,12 +8,12 @@ import CartWidget from "../CartWidget/CartWidget";
 
 function BasicExample() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container className="containerNav">
+    <Navbar className="navBar" bg="light" expand="lg">
+        
         <Link to={"/"}>
           <Logo />
         </Link>
-       
+
         <Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse  id="basic-navbar-nav">
@@ -30,8 +30,10 @@ function BasicExample() {
             </Nav>
           </Navbar.Collapse>
         </Navbar.Brand>
+        
+           
         <CartWidget/>
-      </Container>
+     
     </Navbar>
   );
 }
