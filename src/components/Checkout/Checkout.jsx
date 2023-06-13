@@ -133,16 +133,17 @@ const Checkout = () => {
         </div>
         {error && <p style={{ color: "red" }}>{error}</p>}
         <button className="btnProducto" type="submit">
-          {" "}
+        
           Finalizar Compra
         </button>
-      </form>
-
-      {ordenId && (
+        {ordenId && (
         <strong className="">
           Gracias por tu compra! tu numero de Orden es: {ordenId}
         </strong>
       )}
+      </form>
+
+     
     </div>
   );
 };

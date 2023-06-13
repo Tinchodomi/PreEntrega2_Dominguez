@@ -1,8 +1,9 @@
 .checkoutDiv {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
+  padding-left: 150px;
+  padding-right: 150px;
   text-align: center;
 }
 

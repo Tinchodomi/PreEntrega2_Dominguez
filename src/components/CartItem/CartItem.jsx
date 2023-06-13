@@ -9,16 +9,18 @@ const CartItem = ({ item, cantidad }) => {
       <img className="contenedorImg" src={item.img} alt="" />
 
       <div className="contenedorCart2">
-        <h2> {item.nombre} </h2>
+        <p> {item.nombre} </p>
+        
         <p>Cantidad: {cantidad} </p>
         <p>Precio: {item.precio * cantidad} </p>
-        <button
+       
+      </div>
+      <button
           className="btnProducto"
           onClick={() => eliminarProducto(item.id)}
         >
           Eliminar
         </button>
-      </div>
     </div>
   );
 };
