@@ -5,6 +5,7 @@ import { collection, addDoc, updateDoc,doc, getDoc } from "firebase/firestore";
 import { CarritoContext } from "../../context/CarritoContext";
 
 
+
 const Checkout = () => {
   const { carrito, vaciarCarrito, total } = useContext(CarritoContext);
   const [nombre, setNombre] = useState("");
